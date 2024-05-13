@@ -82,12 +82,4 @@ public void logout()
 	 act.moveToElement(adminimg).perform();
 	 logout1.click();
 }
-	
-
-
-
-
-
-
-
 }
