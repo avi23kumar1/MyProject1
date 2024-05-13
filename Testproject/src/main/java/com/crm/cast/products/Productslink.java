@@ -10,4 +10,6 @@ private WebElement productlink;
 public WebElement getProductlink() {
 	return productlink;
 }
+@FindBy(name = "products")
+private WebElement productl2ink;
 }
