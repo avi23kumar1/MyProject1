@@ -21,6 +21,8 @@ public Home(WebDriver driver)
 }
 @FindBy(linkText="products")
 private WebElement productslink;
+ 
+
 
 public WebElement getProductslink() {
 	return productslink;
