@@ -5,8 +5,6 @@ package com.comcast.crm.opmutility;
 
 
 
-import java.security.KeyStore.PrivateKeyEntry;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -20,6 +18,14 @@ public Home(WebDriver driver)
 	this.driver=driver;
 	PageFactory.initElements( driver,this);
 	
+}
+@FindBy(linkText="products")
+private WebElement productslink;
+
+
+
+public WebElement getProductslink() {
+	return productslink;
 }
 @FindBy(linkText="Organizations")
 private WebElement orglink;
