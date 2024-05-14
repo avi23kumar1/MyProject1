@@ -14,6 +14,8 @@ public class Newtest {
 	public void configas()
 	{
 		
+		
+		
 	}
 	@Test
 	public void createorgtest()
