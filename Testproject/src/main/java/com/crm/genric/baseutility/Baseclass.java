@@ -36,14 +36,15 @@ public 	Webdriverutility wb=new Webdriverutility();
 	public void configbs() throws Throwable
 	{
 	System.out.println("connect to db ,report config");	
-	date.getDBConnection();
+	//date.getDBConnection();
 	
 	}
-	//@BeforeClass(groups = {"smoketest","regressiontest"})
+//@BeforeClass(groups = {"smoketest","regressiontest"})
 	@BeforeClass
 	public void confiBC(/*String browser*/) throws Throwable
 	{
 		System.out.println("launch browser");
+		//String q1 = System.getProperty("browser",file.getdatafromProprty("browser"));
 		String q1=file.getdatafromProprty("browser"); 
 	
 		if(q1.equals("chrome"))
@@ -69,43 +70,43 @@ public 	Webdriverutility wb=new Webdriverutility();
 		Utilityclassobject.setdriver(driver);
 		
 	}
-//	@BeforeMethod(groups = {"smoketest","regressiontest"})
+//@BeforeMethod(groups = {"smoketest","regressiontest"})
 	@BeforeMethod
 	public void ctreateorgBM() throws Throwable 
 	{
-		System.out.println("login");
+		//String q2 = System.getProperty("url",file.getdatafromProprty("url"));
+		//String q3 = System.getProperty("username",file.getdatafromProprty("password"));
+		//String q4 = System.getProperty("password",file.getdatafromProprty("username"));
+	//	System.out.println("login");
 		String q2=file.getdatafromProprty("url");
       String q3=file.getdatafromProprty("password");
 			String q4 = file.getdatafromProprty("username"); 
 			Login lg=new Login(driver);
-		lg.logintoapp(q2, q3, q4);;
-		
-		
+		lg.logintoapp(q2, q3, q4);;		
 	}
-
 	
 	//@AfterMethod(groups = {"smoketest","regressiontest"})
 	@AfterMethod
-	public void craeteorgAM()
+	public void craeteorgAM() 
 	{
 		System.out.println("logout");	
 		Home hm=new Home(driver);
 		hm.logout();
 	}
-	//@AfterClass(groups = {"smoketest","regressiontest"})
+//@AfterClass(groups = {"smoketest","regressiontest"})
 	@AfterClass
 	public void createorgAC()
 	{
 		System.out.println("close browser");
-		driver.quit();
+		driver.close();
 			
-	}
+	}  
 	//@AfterSuite(groups = {"smoketest","regressiontest"})
-	@AfterSuite
+  @AfterSuite
 	public void configas() throws Throwable
 	{
 		System.out.println("cliose db,");
-  		date.closeConnection();
+  		//date.closeConnection();
 	
 	}
 

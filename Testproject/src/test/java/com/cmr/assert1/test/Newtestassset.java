@@ -1,21 +1,13 @@
 package com.cmr.assert1.test;
 
-import static org.testng.Assert.assertEquals;
-
 import java.lang.reflect.Method;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import com.com.cast.crm.generic.fileutlity.Fileutility;
-import com.comcast.crm.generic.databaseutlity.Webdriverutility;
-import com.comcast.crm.opmutility.Login;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 

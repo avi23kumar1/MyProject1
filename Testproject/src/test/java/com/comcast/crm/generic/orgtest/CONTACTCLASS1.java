@@ -34,7 +34,7 @@ public class CONTACTCLASS1 extends Baseclass {
 		Utilityclassobject.gettest().log(Status.INFO, "create new contacts");
 		/* step4: enter all the details and create new contact */
 		Crearenewcongtacetpage nw = new Crearenewcongtacetpage(driver);
-		nw.createcontac1(k11);
+		nw.createcontac1(k11); 
 		String lm = nw.getHeadtest1().getText();
 		/* verify the LastNmae into expected result */
 		boolean check = lm.contains(k11);
