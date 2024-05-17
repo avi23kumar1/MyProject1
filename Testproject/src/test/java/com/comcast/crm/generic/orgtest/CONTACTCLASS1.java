@@ -44,6 +44,9 @@ public class CONTACTCLASS1 extends Baseclass {
 		SoftAssert soft = new SoftAssert();
 		soft.assertEquals(check1, true);
 		soft.assertAll();
+		
+		
+		
 	}
 
 	@Test
