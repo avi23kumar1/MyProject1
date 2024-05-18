@@ -31,10 +31,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/HP/.p2/pool/plugins/org.testng_7.4.0.r202105021533.jar" sourcepath="C:/Users/HP/.p2/pool/plugins/org.testng.source_7.4.0.r202105021533.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
